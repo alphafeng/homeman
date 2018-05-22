@@ -1,0 +1,13 @@
+<!--kaohe.wxml-->
+<view class="container">
+  <block wx:for="{{ kaohelist }}" wx:key="">
+    <rater id="{{ 'rater' + index }}"
+           data-index="{{ index }}"
+           text="{{ item.text }}"
+           max="{{ item.max }}"
+           stars="{{ item.stars }}"
+           bindvaluechanged="onValueChanged"/>
+  </block>
+
+  <button bindtap="tapKaohe">提交</button>
+</view>

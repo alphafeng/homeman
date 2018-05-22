@@ -1,0 +1,17 @@
+<!--components/rater/rater.wxml-->
+
+<view class="wux-rater">
+  <view class="wux-rater__text"
+        style="color: {{ textColor }}; font-size: {{ fontSize + 'px' }}">
+    {{text}}
+  </view>
+  
+  <block wx:for="{{ stars }}" wx:key="">
+    <view class="wux-rater__list" 
+          bindtap="_handlerClick" 
+          data-index="{{ index }}" 
+          style="color: {{ index+1 > rateVal ? '#ccc' : activeColor }}; font-size: {{ starSize + 'px' }}; margin: {{ margin + 'px'}}">
+      {{ star }}
+    </view>
+  </block>
+</view>

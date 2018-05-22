@@ -1,0 +1,19 @@
+/* components/rater/rater.wxss */
+.wux-rater {
+  display: flex;
+  flex-flow: row wrap;
+  /* background-color: gray; */
+  justify-content: left;
+  width: 100vw;
+}
+.wux-rater__list {
+  cursor: pointer;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.wux-rater__text {
+  align-self: center;
+  margin-left: 5px;
+  width: 100px;
+}
